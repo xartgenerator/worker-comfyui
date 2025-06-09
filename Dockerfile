@@ -90,7 +90,7 @@ RUN mkdir -p models/checkpoints models/vae models/unet models/clip
 RUN wget -q -O models/unet/flux1-dev.safetensors https://civitai.com/api/download/models/1806987?&token=84d8a84d6a271ad0e345b827fa37dfad && \
     wget -q -O models/clip/clip_l.safetensors https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/clip_l.safetensors && \
     wget -q -O models/clip/t5xxl_fp8_e4m3fn.safetensors https://huggingface.co/comfyanonymous/flux_text_encoders/resolve/main/t5xxl_fp8_e4m3fn.safetensors && \
-    wget -q --header="Authorization: Bearer ${HUGGINGFACE_ACCESS_TOKEN}" -O models/vae/ae.safetensors https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors
+    wget -q --header="Authorization: Bearer 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" -O models/vae/ae.safetensors https://huggingface.co/black-forest-labs/FLUX.1-dev/resolve/main/ae.safetensors
 
 # Stage 3: Final image
 FROM base AS final
